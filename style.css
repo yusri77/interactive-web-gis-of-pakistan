@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eef2f5;
+}
+
+/* ---------- Header ---------- */
+header {
+  background: linear-gradient(135deg, #0b3d2e, #1b7f5c);
+  color: white;
+  text-align: center;
+  padding: 18px 15px;
+  border-bottom: 4px solid #f1c40f;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 0.5px;
+}
+
+header p {
+  margin: 6px 0 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* ---------- Map size ---------- */
+#map-wrapper {
+  position: relative;
+  width: 96%;
+  max-width: 1300px;
+  margin: 15px auto;
+  border: 3px solid #0b3d2e;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
+}
+
+#map {
+  height: 70vh;
+  min-height: 500px;
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  font-size: 13px;
+  color: #444;
+  padding-bottom: 15px;
+}
+
+/* ---------- Custom marker symbols ---------- */
+.city-marker {
+  width: 16px;
+  height: 16px;
+  background: #e63946;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+.station-marker {
+  width: 14px;
+  height: 14px;
+  background: #1d6fd8;
+  border: 2px solid #fff;
+  transform: rotate(45deg);           /* diamond shape */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+/* ---------- Popups ---------- */
+.popup-title {
+  font-size: 15px;
+  font-weight: bold;
+  color: #0b3d2e;
+  border-bottom: 2px solid #f1c40f;
+  margin-bottom: 5px;
+  padding-bottom: 3px;
+}
+
+.popup-row {
+  margin: 2px 0;
+  font-size: 13px;
+}
+
+/* ---------- Legend ---------- */
+#map-wrapper {
+  position: relative;
+}
+
+#legend {
+  position: absolute;
+  bottom: 25px;
+  right: 15px;
+  z-index: 1000;
+  background: #fff;
+  padding: 10px 14px;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+#legend h4 {
+  margin: 0 0 6px;
+  font-size: 14px;
+}
+
+.legend-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 4px 0;
+}
+
+.legend-dot {
+  display: inline-block;
+  border: 1px solid #333;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.legend-block + .legend-block {
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid #ddd;
+}
